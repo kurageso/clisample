@@ -1,0 +1,17 @@
+builds:
+  - main: .
+    binary: program
+    flags:
+      - -tags=dev
+      - -v
+
+    env:
+      - CGO_ENABLED=0
+
+brews:
+  - tap:
+      owner: kurageso
+      name: homebrew-clisample
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+    folder: Formula
+    homepage: https://github.com/kurageso/clisample
