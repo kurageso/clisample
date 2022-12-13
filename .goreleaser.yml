@@ -1,6 +1,6 @@
 builds:
   - main: .
-    binary: clisamaple
+    binary: program
     flags:
       - -tags=dev
       - -v
