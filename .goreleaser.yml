@@ -15,3 +15,5 @@ brews:
       token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
     folder: Formula
     homepage: https://github.com/kurageso/clisample
+    install: |
+      bin.install "program" => "clisample"
